@@ -1,0 +1,19 @@
+{
+    "name": "christiaanbye/measure",
+    "description": "Drop-dead simple execution time measurements",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christiaan Bye",
+            "email": "christiaanbye@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Measure\\": "src"
+        }
+    }
+}

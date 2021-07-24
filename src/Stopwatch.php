@@ -1,12 +1,12 @@
 <?php
 
-namespace Measure;
+namespace Stopwatch;
 
 use function is_int;
 use function is_string;
 use function microtime;
 
-class Measure
+class Stopwatch
 {
     /** @var float|int */
     private static $startTime;

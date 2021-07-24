@@ -1,5 +1,5 @@
 {
-    "name": "christiaanbye/measure",
+    "name": "christiaanbye/stopwatch",
     "description": "Drop-dead easy execution time measurements",
     "license": "MIT",
     "authors": [
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Measure\\": "src"
+            "Stopwatch\\": "src"
         }
     }
 }

@@ -1,20 +1,20 @@
 <?php
 
-use Measure\Measure;
+use Stopwatch\Stopwatch;
 
 require_once 'vendor/autoload.php';
 
-Measure::start();
+Stopwatch::start();
 usleep(1000);
-var_dump(Measure::elapsed());
-Measure::split('Split 1');
-var_dump(Measure::elapsed());
+var_dump(Stopwatch::elapsed());
+Stopwatch::split('Split 1');
+var_dump(Stopwatch::elapsed());
 usleep(1200);
-Measure::split('Split 2');
+Stopwatch::split('Split 2');
 usleep(1400);
-Measure::stop();
-var_dump(Measure::elapsed());
-var_dump(Measure::elapsed());
-var_dump(Measure::elapsed());
+Stopwatch::stop();
+var_dump(Stopwatch::elapsed());
+var_dump(Stopwatch::elapsed());
+var_dump(Stopwatch::elapsed());
 
-var_dump(Measure::getSplits());
+var_dump(Stopwatch::getSplits());

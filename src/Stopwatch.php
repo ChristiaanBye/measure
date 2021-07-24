@@ -69,7 +69,7 @@ class Stopwatch
     public static function getSplits()
     {
         // Stop the time if it was left running
-        if (isset(self::$stopTime)) {
+        if (!isset(self::$stopTime)) {
             self::stop();
         }
 

@@ -1,6 +1,7 @@
 {
     "name": "christiaanbye/stopwatch",
-    "description": "Drop-dead easy execution time measurements",
+    "description": "Drop-dead simple execution time measurements",
+    "keywords": ["timer", "stopwatch", "time", "performance", "benchmark"],
     "license": "MIT",
     "authors": [
         {

@@ -2,10 +2,6 @@
 
 namespace Stopwatch;
 
-use function is_int;
-use function is_string;
-use function microtime;
-
 class Stopwatch
 {
     /** @var float|int */

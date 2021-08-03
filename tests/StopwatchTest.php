@@ -30,24 +30,6 @@ class StopwatchTest extends \PHPUnit_Framework_TestCase
         self::assertSame($elapsedAfterStopping1, $elapsedAfterStopping2);
     }
 
-    public function testWithSplits()
-    {
-        Stopwatch::start();
-
-        usleep(200000);
-
-        // Make the first time registration
-        Stopwatch::split('1st');
-
-        usleep(200000);
-
-        // Make the first time registration
-        Stopwatch::split('2nd');
-
-        // Make the first time registration
-        Stopwatch::split('3rd');
-    }
-
     public function test_elapsed_throwsRuntimeException_ifStopwatchHasNotBeenStarted()
     {
         $this->setExpectedException('RuntimeException', 'The elapsed time can not be reported as the stopwatch has never been started.');

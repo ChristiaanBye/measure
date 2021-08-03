@@ -16,5 +16,13 @@
         "psr-4": {
             "Stopwatch\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stopwatch\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
     }
 }

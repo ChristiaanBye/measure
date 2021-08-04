@@ -8,7 +8,7 @@ As the name implies, this is a helper for profiling code in PHP. The library is 
 
 Prerequisites
 ---
-* PHP 5.6 or later
+* PHP 5.4 or later
 
 Installation
 ---

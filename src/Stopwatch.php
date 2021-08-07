@@ -32,6 +32,10 @@ class Stopwatch
             throw new \InvalidArgumentException('Please enter a valid string as key to identify the intermediate time.');
         }
 
+        if (array_key_exists($key, self::$splits)) {
+            throw new \InvalidArgumentException('The entered key "' . $key . '" is already in use.');
+        }
+
         self::$splits[$key] = self::getTime();
     }
 
@@ -64,11 +68,6 @@ class Stopwatch
      */
     public static function getSplits()
     {
-        // Stop the time if it was left running
-        if (!isset(self::$stopTime)) {
-            self::stop();
-        }
-
         $result        = array();
         $previousSplit = 0;
 
@@ -84,7 +83,7 @@ class Stopwatch
         }
 
         $result['overall'] = array(
-            'sinceStart' => self::diff(self::$startTime, self::$stopTime)
+            'sinceStart' => self::diff(self::$startTime, self::getTime())
         );
 
         return $result;

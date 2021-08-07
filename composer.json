@@ -23,6 +23,7 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.8"
+        "phpunit/phpunit": "^4.8",
+        "christiaanbye/polyfill-each": "^1.0"
     }
 }

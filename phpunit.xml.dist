@@ -4,7 +4,8 @@
          bootstrap="vendor/autoload.php"
          colors="true"
          verbose="true"
-         beStrictAboutTestsThatDoNotTestAnything="true">
+         beStrictAboutTestsThatDoNotTestAnything="true"
+         convertWarningsToExceptions="false">
     <testsuites>
         <testsuite name="default">
             <directory suffix="Test.php">tests</directory>

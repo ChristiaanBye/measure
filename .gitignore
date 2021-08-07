@@ -1,5 +1,7 @@
+.bash_history
 .cache
 .config
 .local
+.phpstorm_helpers
 composer.lock
 vendor
